@@ -11324,3 +11324,45 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+/* === Contact Section (Google Form) === */
+.contact-section {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9; /* light neutral background */
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+  font-family: 'Poppins', sans-serif; /* adjust to match your site */
+}
+
+.contact-section h2 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.contact-section p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.form-container {
+  border-radius: 1rem;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.form-container iframe {
+  width: 100%;
+  height: 700px;
+  border: none;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .form-container iframe {
+    height: 900px;
+  }
+}
