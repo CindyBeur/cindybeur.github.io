@@ -30,7 +30,6 @@
                         <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                         <!-- <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li> -->
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#teacher">Teacher</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -185,6 +184,14 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">About</h2>
+                   <div class="text-center mb-4">
+    <img
+        src="assets/img/team/1.jpg"
+        alt="Cindy Beurtheret"
+        class="rounded"
+        style="width: 110px; height: 140px; object-fit: cover;"
+    />
+</div>
                     <h3 class="section-subheading text-muted">
 I'm a French-American educator based in France with more than 20 years of experience in language education. My work has included French immersion, curriculum development, secondary and adult education, and personalized language instruction. <br><br>
 La Maison Wren grew from that experience and from a desire to connect language learning with everyday life, culture, and real experiences in France.
@@ -257,45 +264,82 @@ La Maison Wren grew from that experience and from a desire to connect language l
                 </ul>
             </div>
         </section>
-        <!-- Teacher-->
-        <section class="page-section bg-light" id="teacher">
-            <div class="container">
-                
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 text-center">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
-                            <h4>Cindy Beurtheret</h4>
-                            <p class="text-muted"></p>
-                            <a class="btn btn-dark btn-social mx-2" href="https://instagram.com/lamaisonwren" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+       
        <!-- Contact Section -->
-<section id="contact" class="page-section">
+<!-- Contact -->
+<section class="page-section" id="contact">
     <div class="container">
+
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Contact</h2>
             <h3 class="section-subheading text-muted">
-                Interested in French lessons, future immersion experiences, or La Maison Wren? Send me a message below.
+                Interested in French lessons, future immersion experiences, or La Maison Wren? Send me a message.
             </h3>
         </div>
 
-        <div class="form-container">
-            <iframe 
-                src="https://docs.google.com/forms/d/e/1FAIpQLSdsF2YUOW-BXElmWb4zfnarxksoE2ArTn5sZVG72IvFDp9WMw/viewform?embedded=true"
-                width="100%"
-                height="700"
-                frameborder="0"
-                marginheight="0"
-                marginwidth="0">
-                Loading…
-            </iframe>
-        </div>
+        <form action="https://formspree.io/f/xljrvagq" method="POST">
+
+            <div class="row align-items-stretch mb-5">
+
+                <!-- Contact information -->
+                <div class="col-md-6">
+
+                    <div class="form-group mb-3">
+                        <input class="form-control"
+                               type="text"
+                               name="first_name"
+                               placeholder="First name"
+                               required>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <input class="form-control"
+                               type="text"
+                               name="last_name"
+                               placeholder="Last name"
+                               required>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <input class="form-control"
+                               type="email"
+                               name="email"
+                               placeholder="Email address"
+                               required>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <select class="form-control" name="interest">
+                            <option value="">I'm interested in...</option>
+                            <option value="French lessons">French lessons</option>
+                            <option value="French immersion">French immersion</option>
+                            <option value="Other">Something else</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <!-- Message -->
+                <div class="col-md-6">
+                    <div class="form-group form-group-textarea mb-md-0">
+                        <textarea class="form-control"
+                                  name="message"
+                                  placeholder="Your message"
+                                  required></textarea>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center">
+                <button class="btn btn-primary btn-xl text-uppercase"
+                        type="submit">
+                    Send Message
+                </button>
+            </div>
+
+        </form>
+
     </div>
 </section>
        <!-- Footer-->
